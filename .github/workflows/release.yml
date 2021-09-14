@@ -20,7 +20,7 @@ jobs:
         cache: gradle
         
     - name: Installing local dependencies
-      run: mkdir libs && wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" https://api.spiget.org/v2/resources/771/versions/413013/download -P libs/
+      run: mkdir libs && wget -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" https://www.spigotmc.org/resources/771/download?version=413013 -P libs/
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
