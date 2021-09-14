@@ -18,6 +18,9 @@ jobs:
         java-version: '16'
         distribution: 'temurin'
         cache: gradle
+        
+    - name: Installing local dependencies
+      run: mkdir libs && wget https://api.spiget.org/v2/resources/771/versions/413013/download -P libs/
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
