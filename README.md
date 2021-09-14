@@ -32,9 +32,8 @@ For a full set of features, commands, permissions, etc. please visit the [wiki](
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Please follow these steps to set up your development environment:
 1. Clone this repository to a folder of your liking.
-2. Create a `libs` folder inside the cloned project root.
-3. Download version 3.0.4 of [VentureChat](https://www.spigotmc.org/resources/venturechat.771/download?version=413013) and put the corresponding jar inside the newly created `libs` folder.
-4. Now the project *should* be ready for development. If you find anything that's missing, just open an issue, and I will look into it.
+2. Open the project with your IDE of choice.
+3. The project *should* be ready for development. If you find anything that's missing, just open an issue, and I will look into it.
 
 ## License
 
