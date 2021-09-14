@@ -1,0 +1,12 @@
+name: @name@
+version: @ver@
+api-version: @apiVer@
+main: @group@.vestriadice.@name@
+prefix: @prefix@
+authors: [ @author@ ]
+description: @description@
+website: @homepage@
+depend:
+  - CommandAPI
+softdepend:
+  - VentureChat

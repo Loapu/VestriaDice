@@ -1,0 +1,27 @@
+# You will find all available translations inside the lang folder.
+#
+# To use custom translations just make a new file called "lang_<code>_<country>_custom.properties", replace <code> with your
+# language code (i.e. en) and <country> with your country code (i.e. US) and then replace the below code (i.e. en_US_custom).
+# The plugin will automatically use the default language files for every string that isn't customized by you.
+# Expected type: string, default: en_UK
+language: en_UK
+
+# If you want the messages to be shown depending on the player selected locale. Custom translations will be used, if done correctly.
+# Expected type: boolean, default: false
+usePlayerLocale: false
+
+# Per default the plugin handles the highest roll-able number as a critical success. If you want to change this behaviour, you may do this here.
+# Expected type: boolean, default: false
+useLowestNumberForCriticalSuccess: false
+
+# The range where other players around the one who rolls the dice will be getting his results. If changed to 0 the announcement ist global.
+# Expected type: int, default: 15
+rangeForResultAnnouncement: 15
+
+# Uses the chat range of the VentureChat channel instead of the rangeForResultAnnouncement value.
+# Expected type: boolean, default: false
+useVentureChatChannelRange: false
+
+# Not meant for production use. Enable if you need help finding configuration errors or in correspondence with the developer.
+# Expected type: boolean, default: false
+enableDebugMessages: false
