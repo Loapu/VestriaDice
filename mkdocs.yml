@@ -1,0 +1,64 @@
+site_name: VestriaDice Documentation
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.svg
+  logo: assets/images/icon-transparent.svg
+  icon:
+    logo: logo
+  palette:
+    scheme: slate
+    primary: orange
+    accent: orange
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/LoapuDEV
+    - icon: fontawesome/brands/github
+      link: https://github.com/Loapu
+
+copyright: Copyright &copy; 2021 Benjamin Selig
+repo_url: https://github.com/Loapu/VestriaDice
+repo_name: Loapu/VestriaDice
+plugins:
+  - git-revision-date-localized
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - meta
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - attr_list
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Configuration: configuration.md
+  - Commands and Permissions: commands-and-permissions.md
+  - Frequently Asked Questions: faq.md
+  - Open Issue: https://github.com/Loapu/VestriaDice/issues
+  - Become a Sponsor: https://github.com/sponsors/Loapu
