@@ -13,8 +13,8 @@ jobs:
         with:
           python-version: 3.x
       - run: git clone https://github.com/squidfunk/mkdocs-material.git
+      - run: pip install -r mkdocs-material/requirements.txt
       - run: pip install \
-              -r mkdocs-material/requirements.txt \
               mike \
               mkdocs-git-revision-date-localized-plugin
       - run: mike deploy --push --update-aliases 2.2 latest
