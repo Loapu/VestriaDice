@@ -25,7 +25,7 @@ Download the required release from the [Release-Section](https://github.com/Loap
 
 ## Documentation
 
-For a full set of features, commands, permissions, etc. please visit the [wiki](https://github.com/Loapu/VestriaDice/wiki).
+For a full set of features, commands, permissions, etc. please visit the [documentation](https://docs.loapu.dev/VestriaDice/).
 
 ## Contributing
 
