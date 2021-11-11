@@ -25,7 +25,7 @@ dependencies {
     implementation("org.jetbrains:annotations:19.0.0")
     annotationProcessor("dev.jorel.CommandAPI:commandapi-annotations:" + project.property("versionCommandApi") as String)
     implementation("net.kyori:adventure-text-minimessage:" + project.property("versionMiniMessage") as String)
-    implementation(name, "VentureChat-3.0.4")
+    implementation(name, "VentureChat-3.2.2")
 }
 sourceSets {
     main {

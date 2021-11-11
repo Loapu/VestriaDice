@@ -8,7 +8,7 @@ A small Pen-and-Paper-like dice rolling plugin for Minecraft.
 
 ## Dependencies
 - [Paper](https://papermc.io/downloads#Paper-1.17) (or any of its forks) for Minecraft 1.17 or newer
-- [CommandAPI](https://commandapi.jorel.dev/) version [6.3.0](https://github.com/JorelAli/CommandAPI/releases/tag/6.3.0) or newer
+- [CommandAPI](https://commandapi.jorel.dev/) version [6.3.1](https://github.com/JorelAli/CommandAPI/releases/tag/6.3.1) or newer
 
 ## Installation
 

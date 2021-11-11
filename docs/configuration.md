@@ -6,7 +6,7 @@ hide:
 
 ## Defaults
 
-Below you will find the default configuration file `v3` for VestriaDice version `2.2.x`.
+Below you will find the default configuration file `v3` for VestriaDice version `2.3.x`.
 
 ``` yaml
 --8<-- "src/main/resources/config.yml"

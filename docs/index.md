@@ -11,5 +11,6 @@ hide:
 * [Configuration](configuration)
 * [Commands and Permissions](commands-and-permissions)
 * [Frequently Asked Questions](faq)
+* [Developer API](api)
 
 Consider becoming a [Sponsor](https://github.com/sponsors/Loapu) if you :heart: VestriaDice!

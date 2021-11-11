@@ -7,6 +7,7 @@ import dev.jorel.commandapi.annotations.Permission;
 import dev.jorel.commandapi.annotations.arguments.AIntegerArgument;
 import dev.jorel.commandapi.annotations.arguments.AStringArgument;
 import dev.loapu.vestriadice.VestriaDice;
+import dev.loapu.vestriadice.events.DiceRollEvent;
 import dev.loapu.vestriadice.utils.LangManager;
 import dev.loapu.vestriadice.utils.Message;
 import dev.loapu.vestriadice.utils.Setting;
@@ -69,7 +70,7 @@ public class RollCommand
 		String diceString = input.toLowerCase();
 		String diceStringWithoutModifier =  diceString.split("\\+")[0].split("-")[0];
 		String[] diceArray;
-		int modifier = 0;
+		short modifier = 0;
 		if (diceStringWithoutModifier.contains(".")) diceArray = diceStringWithoutModifier.split("\\."); // Split all different dice into one array
 		else diceArray = new String[] { diceStringWithoutModifier };
 		if (diceString.contains("+")) modifier += Integer.parseInt(diceString.split("\\+")[1]);
@@ -125,9 +126,15 @@ public class RollCommand
 			diceRolls.add(stringBuilder.toString());
 		}
 		diceString = String.join("<gray>, ", diceRolls);
-		String modifierString = ((modifier > 0) ? "<color:#00ff00>+" : "<color:#ff0000>") + modifier + "</color>";
-		String resultString = result + modifier + "";
-		String deserializedDisplayname = MiniMessage.builder().build().serialize(sender.displayName());
+		
+		DiceRollEvent event = new DiceRollEvent(sender, result, modifier);
+		Bukkit.getPluginManager().callEvent(event);
+		
+		if (event.isCancelled()) return;
+		
+		String modifierString = ((event.getModifier() > 0) ? "<color:#00ff00>+" : "<color:#ff0000>") + event.getModifier() + "</color>";
+		String resultString = event.getResult() + event.getModifier() + "";
+		String deserializedDisplayname = MiniMessage.builder().build().serialize(event.getPlayer().displayName());
 		
 		sendComponent(lm.getComponent(Message.COMMAND_ROLL_RESULT, sender, Map.of(
 			"player", deserializedDisplayname,

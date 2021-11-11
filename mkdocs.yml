@@ -60,5 +60,6 @@ nav:
   - Configuration: configuration.md
   - Commands and Permissions: commands-and-permissions.md
   - Frequently Asked Questions: faq.md
+  - Developer API: api.md
   - Open Issue: https://github.com/Loapu/VestriaDice/issues
   - Become a Sponsor: https://github.com/sponsors/Loapu
