@@ -13,4 +13,4 @@ hide:
 * [Frequently Asked Questions](faq)
 * [Developer API](api)
 
-Consider becoming a [Sponsor](https://github.com/sponsors/Loapu) if you :heart: VestriaDice!
+Consider becoming a [Sponsor](https://github.com/sponsors/Loapu) if you :heart: VestriaDice! 
